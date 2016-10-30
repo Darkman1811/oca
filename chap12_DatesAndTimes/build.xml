@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<project name="test" default="run">
+	<property file="build.properties"/>
+	<target name="run" depends="build">
+		<java classpath="./build" classname="${classname}"  />
+	</target>
+	<target name="build" depends="prepare">
+		<javac srcdir="." destdir="./build" depend="true" includes="${classname}.java" includeantruntime="false" listfiles="false" verbose="false"/>
+	</target>
+	<target name="prepare">
+		<mkdir dir="./build"/>
+	</target>
+	<target name="clean">
+		<delete dir="./build"/>
+	</target>
+</project>
