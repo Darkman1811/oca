@@ -1,7 +1,6 @@
 import java.time.*;
-import java.time.temporal.*;
-import static java.time.temporal.TemporalQueries.zone;
-
+import java.time.zone.*;
+import java.util.List;
 public class test{
 
 	public static void main(String [] args){
@@ -15,15 +14,12 @@ public class test{
 		ZonedDateTime atDakar=i.atZone(zoneDakar);
 		System.out.println("At the Zone offset: "+atDakar);
 
-
-        ZoneId zoneTokyo=ZoneId.of("Asia/Tokyo");
-		ZonedDateTime atTokyo=i.atZone(zoneTokyo);
-		System.out.println("At the Zone offset: "+atTokyo);
-
-        ZoneId zoneMonaco=ZoneId.of("Europe/Monaco");
-		ZonedDateTime atMonaco=i.atZone(zoneMonaco);
-		System.out.println("At the Zone offset: "+atMonaco);
-		
-
+       ZoneRules rules=zoneDakar.getRules();
+       boolean isFixedOffset=rules.isFixedOffset();
+       System.out.println("Is fixed offset: "+isFixedOffset); 
+       ZoneOffset offset=rules.getOffset(i);
+       System.out.println("Actual offset: "+offset); // Z = UTC +0		
+       List<ZoneOffsetTransition> zot=rules.getTransitions();
+       System.out.println(zot);
 	}
 }
