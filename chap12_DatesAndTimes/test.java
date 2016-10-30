@@ -6,16 +6,19 @@ public class test{
 		System.out.println("Testing Dates");     
 
 		
-		LocalDateTime ldt=LocalDateTime.of(2016,10,29,07,46,13);
+		LocalDateTime ldt=LocalDateTime.now();
+		LocalDate ld=LocalDate.now();
+		ld=ld.withYear(2014);
+		ld=ld.withMonth(3);
+		ld=ld.withDayOfMonth(11);
 
-		LocalDate ld=LocalDate.from(ldt);
-		LocalTime lt=LocalTime.from(ldt);
+		LocalTime lt=LocalTime.now();
+        lt=lt.withHour(18);
+        lt=lt.withMinute(47);
+        lt=lt.withSecond(56);
+        lt=lt.withNano(37);
 
-		// ld= LocalDate.from(lt); -- Does not work - Unable to obtain LocalDate from TemporalAccessor: 07:46:13 of type java.time.LocalTime
-	    // lt=LocalTime.from(ld);  -- Does not work - java.time.DateTimeException: Unable to obtain LocalTime from TemporalAccessor: 2016-10-29 of type java.time.LocalDate
-        
-        ld= LocalDate.from(ld);
-        lt=LocalTime.from(lt);
+
 
 		System.out.println("DateTilme: "+ldt);
 		System.out.println("Date: "+ld);
