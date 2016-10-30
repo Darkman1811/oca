@@ -8,20 +8,24 @@ public class test{
 		
 		LocalDateTime ldt=LocalDateTime.now();
 		LocalDate ld=LocalDate.now();
-		ld=ld.withYear(2014);
-		ld=ld.withMonth(3);
-		ld=ld.withDayOfMonth(11);
+		int y=ld.getYear();
+		Month m=ld.getMonth();
+		int d=ld.getDayOfMonth();
 
 		LocalTime lt=LocalTime.now();
-        lt=lt.withHour(18);
-        lt=lt.withMinute(47);
-        lt=lt.withSecond(56);
-        lt=lt.withNano(37);
+        int h=lt.getHour();
+        int min=lt.getMinute();
+        int s=lt.getSecond();
+        int n=lt.getNano();
 
 
+		System.out.println("Year: "+y);
+		System.out.println("Month: "+m);
+		System.out.println("Day: "+d);
 
-		System.out.println("DateTilme: "+ldt);
-		System.out.println("Date: "+ld);
-		System.out.println("Time: "+lt);
+		System.out.println("Hours: "+h);
+		System.out.println("Month: "+min);
+		System.out.println("Minutes: "+s);
+		System.out.println("NanoSeconds: "+n);
 	}
 }
