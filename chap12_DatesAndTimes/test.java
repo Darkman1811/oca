@@ -7,13 +7,20 @@ public class test{
 
 		
 		LocalDateTime ldt=LocalDateTime.now();
-		LocalDate ld=ldt.toLocalDate();
-		
-		LocalTime lt=ldt.toLocalTime();
-        
+
+		LocalDate ld=LocalDate.now();
+		ldt=ld.atStartOfDay();
 		System.out.println("LocalDateTime: "+ldt);
-		System.out.println("LocalDate: "+ld);
-		System.out.println("LocalTime: "+lt);
+        
+        ldt=ld.atTime(15,30);
+        System.out.println("LocalDateTime: "+ldt);
+
+        ld=Year.of(2017).atMonth(5).atDay(22);        
+        System.out.println("LocalDate: "+ld);
+        
+        LocalTime lt=LocalTime.now();
+        ldt=lt.atDate(ld);
+        System.out.println("LocalDateTime: "+ldt);
 
 		
 	}
