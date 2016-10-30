@@ -4,17 +4,17 @@ import java.time.temporal.*;
 public class test{
 
 	public static void main(String [] args){
-		System.out.println("Testing Dates");     
-        LocalDateTime ldt=LocalDateTime.of(2016,11,18,18,35,40,50);
-		Instant i=Instant.ofEpochSecond(ldt.toEpochSecond(ZoneOffset.UTC));
-		System.out.println("origin: "+i);
+		System.out.println("Testing Dates: Duration");     
+        LocalDateTime ldt1=LocalDateTime.of(1985,11,18,18,35,40,50);
+        LocalDateTime ldt2=LocalDateTime.now();
+        Duration d1=Duration.between(ldt1,ldt2);
+        System.out.println("Age:"+d1.toDays()+" jours"); //Converting duration to years, months is not possible
+        System.out.println("Age:"+d1.toHours()+" heurs"); //Converting duration to years, months is not possible
+        System.out.println("Age:"+d1.toMinutes()+" minutes"); //Converting duration to years, months is not possible
 
-		Duration du=Duration.ofMinutes(15);
-		System.out.println("Dureé de 15mn: "+du);
-
-		i=i.plus(du);
-		System.out.println("Instant + duréé 25 mn "+i);
-
-        		
+        Instant i= Instant.now().plus(d1);
+        System.out.println("You will reach the double of your age at: "+i);
+		
+	
 	}
 }
