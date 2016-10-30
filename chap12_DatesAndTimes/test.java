@@ -1,55 +1,31 @@
 import java.time.*;
-import java.time.zone.*;
+import java.time.temporal.*;
+
 public class test{
 
 	public static void main(String [] args){
 		System.out.println("Testing Dates");     
 
-		
-		LocalDateTime ldt=LocalDateTime.now();
-		LocalDate ld=LocalDate.now();
-        LocalTime lt=LocalTime.now();
+		Instant i=Instant.now();
+		System.out.println("Instant now: "+i);
+        i=i.plus(3,ChronoUnit.DAYS);
+        System.out.println("+3 days: "+i);
 
-        System.out.println("LocalDate:");
-		System.out.println("Today: "+ld);
-        ld=ld.minusYears(3);
-        System.out.println("-3 years: "+ld);
-        ld=ld.minusMonths(4);
-        System.out.println("-4 months: "+ld);
-        ld=ld.minusWeeks(2);
-        System.out.println("- two weeks: "+ld);
-        ld=ld.minusDays(9);
-        System.out.println("minus 9 days: "+ld);
+        i=i.plus(1,ChronoUnit.HALF_DAYS);
+        System.out.println("+1 half day: "+i);
 
-        System.out.println("\n \n LocalTime:");        
-        System.out.println("now: "+lt);
-        lt=lt.minusHours(4);
-        System.out.println("-4 Hours: "+lt);
-        lt=lt.minusMinutes(25);
-        System.out.println("-25 minutes: "+lt);
-        lt=lt.minusSeconds(30);
-        System.out.println("-30 secondes: "+lt);
-        lt=lt.minusNanos(17);
-        System.out.println("-17 nanosecodes: "+lt);
+        i=i.plus(5,ChronoUnit.HOURS);
+        System.out.println("+5 hours: "+i);
 
-        System.out.println("\n \n LocalDateTime:");
-        System.out.println("Today now: "+ldt);
-        ldt=ldt.minusYears(3);
-        System.out.println("-3 years: "+ldt);
-        ldt=ldt.minusMonths(4);
-        System.out.println("-4 months: "+ldt);
-        ldt=ldt.minusWeeks(2);
-        System.out.println("- two weeks: "+ldt);
-        ldt=ldt.minusDays(9);
-        System.out.println("minus 9 days: "+ldt);
-        ldt=ldt.minusHours(4);
-        System.out.println("-4 Hours: "+ldt);
-        ldt=ldt.minusMinutes(25);
-        System.out.println("-25 minutes: "+ldt);
-        ldt=ldt.minusSeconds(30);
-        System.out.println("-30 secondes: "+ldt);
-        ldt=ldt.minusNanos(17);
-        System.out.println("-17 nanosecodes: "+ldt);
+        i=i.plus(15,ChronoUnit.MINUTES);
+        System.out.println("+15 minutes: "+i);
+
+        i=i.plus(41,ChronoUnit.SECONDS);
+        System.out.println("+41 seconds: "+i);
+
+        i=i.plus(56,ChronoUnit.NANOS);
+        System.out.println("+56 nanoseconds: "+i);
+
         
 		
 	}
