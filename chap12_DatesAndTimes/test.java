@@ -8,24 +8,18 @@ public class test{
         
         //Month from date
        LocalDate ld=LocalDate.of(1985,11,18);
-       Month m1=Month.from(ld);
-       
-       //Month from int
-       Month m2=Month.of(3);
-       
+       DayOfWeek dow1= DayOfWeek.from(ld);
 
-       // 5 Months later
-       Month m3=m1.plus(5);
+       //5 days later
+       DayOfWeek dow2= dow1.plus(5);
 
-       //Int value of the month
-       int mois= m3.getValue();
+       //3 days befor
+       DayOfWeek dow3=dow1.minus(3);
 
 
 
-       System.out.println("Mois 1 : "+m1);
-       System.out.println("Mois 2 : "+m2);
-       System.out.println("Mois 3 : "+m3);
-       System.out.println("Int Value of m3 : "+mois);
-
+       System.out.println("Day of Week dow1: "+dow1);
+       System.out.println("Day of Week dow2: "+dow2);
+       System.out.println("Day of Week dow3: "+dow3);
        }
 }
