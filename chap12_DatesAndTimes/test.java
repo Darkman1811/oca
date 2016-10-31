@@ -6,20 +6,26 @@ public class test{
 	public static void main(String [] args){
 		System.out.println("Testing Dates: Zone offset");     
         
-        Instant i= Instant.now();
-        System.out.println("now hiere: "+i);
+        //Month from date
+       LocalDate ld=LocalDate.of(1985,11,18);
+       Month m1=Month.from(ld);
+       
+       //Month from int
+       Month m2=Month.of(3);
+       
+
+       // 5 Months later
+       Month m3=m1.plus(5);
+
+       //Int value of the month
+       int mois= m3.getValue();
 
 
-        ZoneId zoneDakar=ZoneId.of("Africa/Dakar");
-		ZonedDateTime atDakar=i.atZone(zoneDakar);
-		System.out.println("At the Zone offset: "+atDakar);
 
-       ZoneRules rules=zoneDakar.getRules();
-       boolean isFixedOffset=rules.isFixedOffset();
-       System.out.println("Is fixed offset: "+isFixedOffset); 
-       ZoneOffset offset=rules.getOffset(i);
-       System.out.println("Actual offset: "+offset); // Z = UTC +0		
-       List<ZoneOffsetTransition> zot=rules.getTransitions();
-       System.out.println(zot);
-	}
+       System.out.println("Mois 1 : "+m1);
+       System.out.println("Mois 2 : "+m2);
+       System.out.println("Mois 3 : "+m3);
+       System.out.println("Int Value of m3 : "+mois);
+
+       }
 }
