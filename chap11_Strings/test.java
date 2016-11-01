@@ -14,5 +14,7 @@ public class test{
 		String str2=sb3.toString(); System.out.println(str2);
 
 		sb3.append(". Java is great !!!"); System.out.println(sb3);
+		sb3.reverse(); System.out.println(sb3);
+
 	}
 }
