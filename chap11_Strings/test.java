@@ -18,6 +18,8 @@ public class test{
         boolean hasContent= str1.isEmpty(); System.out.println("is str1 empty: "+hasContent);
         
         String str3= str1.toUpperCase(); System.out.println("st1 to Uppercase: "+str3);
+        
+        String str4= str1.toLowerCase(); System.out.println("st1 to Lowercase: "+str4);
 
 
 
