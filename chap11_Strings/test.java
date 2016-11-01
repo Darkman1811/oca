@@ -1,6 +1,7 @@
 public class test{
 	public static void main(String [] args){
 		System.out.println("bobo");
+//<<<<<<< HEAD
 //------------------------------------------------------------------------------INSTANCIATION
 		String str1= "Hello";
 		String str2= new String ("Hello");
@@ -44,6 +45,22 @@ public class test{
         System.out.println(parts);
 
         String str9=String.join(".","rep1","rep2","rep3","rep4"); System.out.println(str9);
+//=======
+		StringBuilder sb1=new StringBuilder("here is the content"); System.out.println(sb1);
+		StringBuilder sb2=new StringBuilder(200); //With size 
+
+		int len=sb2.length(); System.out.println(len);
+		int cap=sb2.capacity(); System.out.println(cap);
+
+		//StringBuilder from String
+		String str= new String("Hello from String");
+		StringBuilder sb3= new StringBuilder(str); System.out.println(sb3);
+
+		String str10=sb3.toString(); System.out.println(str2);
+
+		sb3.append(". Java is great !!!"); System.out.println(sb3);
+		sb3.reverse(); System.out.println(sb3);
+//>>>>>>> StringBuilder
 
 	}
 }
