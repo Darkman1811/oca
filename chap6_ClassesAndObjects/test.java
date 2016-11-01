@@ -1,15 +1,13 @@
-
-import java.time.*; //does not concerne the subpackages of java.time
-//import java.time.temporal.*; //importing chronofiel from java.time.temporal.ChronoField
+import java.util.Date;
+import java.sql.*; //java.util.Date is more specifique so it will take the relevance
 public class test{
 	    
 		
 	public static void main(String [] args){
 		System.out.println("bobo");
-       
-
-        LocalDate ld= LocalDate.now(); System.out.println(ld);
-        System.out.println(ld.get(ChronoField.YEAR)); //not in java.time
+        Date d=new Date();
+        String str=d.getClass().toString();
+        System.out.println(str);
 
        
 	}
