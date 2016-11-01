@@ -6,9 +6,9 @@ public class test{
        
 	}
 
-	public test(){       //commenting this methode out will work but song's value will be instance
+/*	public test(){       //commenting this methode out will work but song's value will be instance
 		song="default";
 	}
-    
+ */   
 
 }
