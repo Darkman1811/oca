@@ -6,5 +6,9 @@ public class test{
 
 		int len=sb2.length(); System.out.println(len);
 		int cap=sb2.capacity(); System.out.println(cap);
+
+		//StringBuilder from String
+		String str= new String("Hello from String");
+		StringBuilder sb3= new StringBuilder(str); System.out.println(sb3);
 	}
 }
