@@ -3,21 +3,12 @@ public class test{
 		
 	public static void main(String [] args){
 		System.out.println("bobo");
-       test t=new test();
-       
+       test t;
+      // System.out.println(t); does not work. t does not even point to null. it does point to anyting
+       t=new test();
+       System.out.println(t);
+       t=null;
+       System.out.println(t);
 	}
-public test(){
-	song="constructor";
-	System.out.println(song);
-}
 
-{
-	song="initializater1";
-    System.out.println(song);
-}
-
-{
-	song="initializater2";
-	System.out.println(song);
-}
 }
