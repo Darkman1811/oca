@@ -23,8 +23,10 @@ public class test{
 
         int ind= str1.indexOf('e'); System.out.println("index of e: "+ind);
 
-
         int ind2= str1.lastIndexOf('l'); System.out.println("last index of l: "+ind2);
+
+        String str5= "Bonjour mon bébé adoré.".substring(7); System.out.println(str5);
+        String str6= "Bonjour mon bébé adoré.".substring(8,16); System.out.println(str6);
 
 
 
