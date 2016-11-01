@@ -35,6 +35,9 @@ public class test{
         boolean sth= str1.startsWith("h"); System.out.println(sth);
         boolean stH= str1.startsWith("H"); System.out.println(stH);
 
+        boolean endh= str1.endsWith("h"); System.out.println(endh);
+        boolean endH= str1.endsWith("H"); System.out.println(endH);
+
 
 	}
 }
