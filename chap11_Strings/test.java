@@ -12,5 +12,9 @@ public class test{
         //Based on the unicode Values of the String
         int dif= str1.compareTo(str2); System.out.println("is str1 different from str2: "+dif);
 
+        // No case sentive
+        boolean isSame2= str1.equalsIgnoreCase(str2); System.out.println("is str1 same that str2 ignoring case: "+isSame2);
+
+
 	}
 }
