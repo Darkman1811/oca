@@ -21,6 +21,11 @@ public class test{
         
         String str4= str1.toLowerCase(); System.out.println("st1 to Lowercase: "+str4);
 
+        int ind= str1.indexOf('e'); System.out.println("index of e: "+ind);
+
+
+        int ind2= str1.lastIndexOf('l'); System.out.println("last index of l: "+ind2);
+
 
 
 
