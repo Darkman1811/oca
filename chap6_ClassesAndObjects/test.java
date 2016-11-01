@@ -1,16 +1,19 @@
 public class test{
+	static String song="static"; //instance and classe variables can't have the same name
+//	String song="instance";  //can't access instance variable from static context
 	public static void main(String [] args){
 		System.out.println("bobo");
-        new Personne().sayhello();
+        String song="local1";   //Local variable overide instance & classe variables
+        System.out.println(song);
+        new test().sing(song);
 	}
-}
-// only one public class is autorized
-//tha public class must have the same name as the file
-// only public and specifying no access lever (package acces level) is authorized for classes
- class Personne{
-	public void sayhello(){
-      System.out.println("hello man welcome to java!!!");
+
+	private void sing(String song){
+       System.out.println(song);
+    //   String song="local2"; //local variables and parameters can't have the same name
+       System.out.println(song);
 	}
+
 
 
 }
