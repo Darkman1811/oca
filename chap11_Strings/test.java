@@ -38,6 +38,11 @@ public class test{
         boolean endh= str1.endsWith("h"); System.out.println(endh);
         boolean endH= str1.endsWith("H"); System.out.println(endH);
 
+        String lst="first,second,third,fourth,fifth,sixth,seventh";
+        System.out.println(lst);
+        String [] parts= lst.split(",");
+        System.out.println(parts);
 
+        
 	}
 }
