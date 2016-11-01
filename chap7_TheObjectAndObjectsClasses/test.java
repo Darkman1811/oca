@@ -1,20 +1,15 @@
 public class test{
 	public static void main(String [] args){
 		System.out.println("bobo");
-		Personne pers= new Personne();
-		pers.id=1;
-		pers.name="Abdoulaye";
-		System.out.println(pers);
+		String str=new String("Hello");
+		Object obj=str;
+
+		str=(String)str; System.out.println(str);
+
+        System.out.println("obj: "+obj.getClass().getName());
+		System.out.println("str: "+str.getClass().getName());
+
 
 	}
 
-}
-
-class Personne{
-	public int id;
-	public String name;
-
-	public String toString(){
-		return("id:"+id+" -name:"+name);
-	}
 }
