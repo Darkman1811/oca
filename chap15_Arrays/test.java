@@ -5,5 +5,10 @@ public class test{
 		
 		String []arr2={"Abdoulaye","Yacine","Fatou"};  
 
+		int i=arr1[3]; System.out.println(i);
+
+		String str=arr2[1]; System.out.println(str);
+		Object obj=arr2[0]; //can be cast 
+
 	}
 }
