@@ -14,6 +14,10 @@ public class test{
 
         // No case sentive
         boolean isSame2= str1.equalsIgnoreCase(str2); System.out.println("is str1 same that str2 ignoring case: "+isSame2);
+        
+        boolean hasContent= str1.isEmpty(); System.out.println("is str1 empty: "+hasContent);
+
+
 
 
 	}
