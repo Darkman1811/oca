@@ -43,6 +43,7 @@ public class test{
         String [] parts= lst.split(",");
         System.out.println(parts);
 
-        
+        String str9=String.join(".","rep1","rep2","rep3","rep4"); System.out.println(str9);
+
 	}
 }
