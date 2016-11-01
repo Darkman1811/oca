@@ -8,7 +8,7 @@ Programme:
    7-instantiating classes
    8-calling super()
    9-default constructor
-   10-T.getInstance
+   10-T.getInstance //does not exist, is a classinc getter for a singletone implementation
    11-initialisation blocks
    12-static initialisation block
    13-initialisation order
