@@ -16,6 +16,10 @@ public class test{
         boolean isSame2= str1.equalsIgnoreCase(str2); System.out.println("is str1 same that str2 ignoring case: "+isSame2);
         
         boolean hasContent= str1.isEmpty(); System.out.println("is str1 empty: "+hasContent);
+        
+        String str3= str1.toUpperCase(); System.out.println("st1 to Uppercase: "+str3);
+
+
 
 
 
