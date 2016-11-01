@@ -6,7 +6,9 @@ public class test{
 
 		str=(String)str; System.out.println(str);
 
-		boolean isString=obj instanceof String; System.out.println("isString: "+isString);
+        System.out.println("obj: "+obj.getClass());
+		System.out.println("str: "+str.getClass());
+
 
 	}
 }
