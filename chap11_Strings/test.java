@@ -7,5 +7,7 @@ public class test{
 //------------------------------------------------------------------------------FUNCTIONS
 		int lenght= str1.length(); System.out.println("lenght of str1: "+lenght);
 
+        boolean isSame= str1.equals(str2); System.out.println("is str1 same that str2: "+isSame);
+
 	}
 }
