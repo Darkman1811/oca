@@ -10,5 +10,7 @@ public class test{
 		//StringBuilder from String
 		String str= new String("Hello from String");
 		StringBuilder sb3= new StringBuilder(str); System.out.println(sb3);
+
+		String str2=sb3.toString(); System.out.println(str2);
 	}
 }
