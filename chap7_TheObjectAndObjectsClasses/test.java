@@ -6,8 +6,8 @@ public class test{
 
 		str=(String)str; System.out.println(str);
 
-        System.out.println("obj: "+obj.getClass().getName());
-		System.out.println("str: "+str.getClass().getName());
+        System.out.println("obj: "+obj.getClass().getSimpleName());
+		System.out.println("str: "+str.getClass().getSimpleName());
 
 
 	}
