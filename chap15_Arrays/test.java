@@ -1,9 +1,9 @@
 public class test{
 	public static void main(String [] args){
 		System.out.println("Arrays");
-		int [] arr1=new int[5]; //must set number of elements
-		int arr2[]= new int[10];
+		int [] arr1= {1,2,3,4,5,6,7,8}; 
+		
+		String []arr2={"Abdoulaye","Yacine","Fatou"};  
 
-		String []arr3=new String[5];
 	}
 }
