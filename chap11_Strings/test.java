@@ -28,9 +28,12 @@ public class test{
         String str5= "Bonjour mon bébé adoré.".substring(7); System.out.println(str5);
         String str6= "Bonjour mon bébé adoré.".substring(8,16); System.out.println(str6);
 
+        String str7= "    Bonjour mon bébé adoré.   ".trim(); System.out.println(str7);
 
+        String str8= str1.replace('e','a'); System.out.println(str8);
 
-
+        boolean sth= str1.startsWith("h"); System.out.println(sth);
+        boolean stH= str1.startsWith("H"); System.out.println(stH);
 
 
 	}
