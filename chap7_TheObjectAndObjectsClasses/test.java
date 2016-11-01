@@ -4,12 +4,10 @@ public class test{
 	    Personne pers= new Personne();
 	    pers.id=1;
 	    pers.name="Abdoulaye";
-	    System.out.println(pers.hashCode());
-	   
-	    Personne pers2=new Personne();
-        pers2.id=1;
-        pers2.name="Yacine";
-	   System.out.println(pers.equals(pers2));
+
+	    Personne pers2=pers.clone();
+	    System.out.println(pers2.id);
+	    System.out.println(pers2.name);
 	}
 
 }
@@ -17,19 +15,10 @@ public class test{
 class Personne{
 	int id;
 	String name;
-public boolean equals(Object obj){
-	 if(obj==this){return true;} 
-	if(!(obj instanceof Personne)){return false;}
-    Personne other=(Personne)obj;
-    if(this.id==other.id){return true;}
-return false;
+public Personne clone(){
+	Personne other=new Personne();
+	other.id=this.id;
+	other.name=this.name;
+	return other;
 }
-
-public int hashCode(){
-  
-int code=18;
-int hashcode=this.id*code;
-return hashcode;
-}
-
 }
